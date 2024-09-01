@@ -53,16 +53,25 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| ALTA | 
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio    | ALTA |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|RF-001| Cadastrar nutricionista como usuário, através da criação de um perfil com informações pessoais gerais ligadas a sua formação.| ALTA | 
+|RF-002| Cadastrar um paciente como usuário, com informações pessoais em geral, objetivos e dados ligados a sua saúde (IMC, altura, idade, etc.) | ALTA |
+|RF-003| Cadastrar um plano alimentar pelo nutricionista para seu respectivo paciente, com receitas, ingredientes, valor nutricional básico (calorias, proteínas, gorduras, etc.) | ALTA |
+|RF-004| Fazer comentário sobre o plano alimentar pelo paciente| BAIXA | 
+|RF-005| Fazer modificações no plano alimentar do paciente pelo nutricionista | ALTA | 
+|RF-006| Registrar o diário alimentar do paciente com informações sobre horário das refeições, calorias ingeridas, ingredientes consumidos, etc por meio de um campo Editável| ALTA | 
+|RF-007| Propor dicas de receitas por nutricionistas e pacientes| MÉDIA | 
+|RF-008| Registrar perda de peso do paciente ao longo do tempo e exibir o histórico desta informação| ALTA | 
+|RF-009| Avaliar as receitas propostas (like ou joinha) | BAIXA | 
+|RF-010| Calcular índice de massa corpórea para o usuário nutricionista| ALTA |
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| Responsividade para dispositivos móveis | ALTA | 
+|RNF-002| Proteção contra acesso não autorizado | ALTA | 
+|RNF-003| Tempo de resposta à requisições inferior a 1 segundo | ALTA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -86,7 +95,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|02| O back-end não pode ser projetado em outra linguagem que não seja C#|
+|03| Não poderá ser utilizado framework no front-end a não ser o Bootstrap|
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
@@ -97,13 +107,6 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+O diagrama de caso de uso pode ser observado abaixo:
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+<img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-nutribem/blob/1834e5e2842a02d7f4fd754f6d37ff89d091bb75/docs/img/D.%20Caso%20de%20uso%20Nutribem%20final.png"/>
